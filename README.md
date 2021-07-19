@@ -9,7 +9,7 @@ const firebase = require('firebase'),
       
 (async() => {
   await db.set("abc", "xyz");
-  const data = await db.ref("abc");
+  const data = await db.get("abc");
   console.log(data); // xyz
   await db.delete("abc");
 })();
