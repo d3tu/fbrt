@@ -3,17 +3,15 @@ module.exports = class Fbrt {
     this.db = db;
   }
   
-  ref(ref) {
-    return {
-      set(key, value) {
-        return this.db.ref(ref).set(key, value);
-      },
-      get(key) {
-        return this.db.ref(ref).once("value").then(res => res.val());
-      },
-      delete(key) {
-        return this.db.ref(ref).remove();
-      }
-    }
+  set(ref, value) {
+    return this.db.ref(ref).set(value);
+  }
+  
+  get(ref) {
+    return this.db.ref(ref).once("value").then(res => res.val());
+  }
+  
+  delete(ref) {
+    return this.db.ref(ref).remove();
   }
 };
