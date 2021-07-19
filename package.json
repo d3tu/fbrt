@@ -1,0 +1,17 @@
+{
+  "name": "fbrt",
+  "version": "0.0.1",
+  "description": "Simplified handler for firebase realtime.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d3tu/fbrt.git"
+  },
+  "keywords": ["firebase", "realtime", "handler", "Simplified"],
+  "author": "d3tu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d3tu/fbrt/issues"
+  },
+  "homepage": "https://github.com/d3tu/fbrt#readme"
+}
